@@ -18,6 +18,10 @@ namespace SRP
             this.Codigo = codigo;
         }
 
+        
+        //Segun SRP, cada clase debe tener responsabilidad sobre una parte de la funcionalidad 
+        //y la responsabilidad debe estar completamente encapsulada por la clase.
+        //Esto no se cumple porque la clase libro tiene dos metodos que cumplen dos responsabilidades distintas.
         public void AlmacenarLibro(String sector, String estante)
         {
             this.SectorBiblioteca = sector;
